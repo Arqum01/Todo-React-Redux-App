@@ -4,8 +4,6 @@ import { addTodo, toggleComplete, updateTodo, deleteTodo } from "../features/tod
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck, faPen, faTrashCan, faRedo } from "@fortawesome/free-solid-svg-icons";
 
-// ... (previous imports)
-
 const Todo = () => {
 	const [text, setText] = useState("");
 	const [editingTodoId, setEditingTodoId] = useState(null);
@@ -19,8 +17,8 @@ const Todo = () => {
 	const handleAddTodo = () => {
 		if (text) {
 			dispatch(addTodo(text));
-			setText(""); // Reset text state after adding a new todo
-			setEditingTodoId(null); // Reset editingTodoId state after adding a new todo
+			setText("");
+			setEditingTodoId(null); 
 		}
 	};
 
