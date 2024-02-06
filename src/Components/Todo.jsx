@@ -18,7 +18,7 @@ const Todo = () => {
 		if (text) {
 			dispatch(addTodo(text));
 			setText("");
-			setEditingTodoId(null); 
+			setEditingTodoId(null);
 		}
 	};
 
